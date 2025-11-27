@@ -5,6 +5,24 @@
 import random  # standard library module to make random choices for the computer
 
 def get_choices():
+     """
+    Prompt the user to enter a valid Rock–Paper–Scissors choice and return it normalized.
+
+    The user is asked to input one of “rock”, “paper”, or “scissors” (case-insensitive).
+    Leading/trailing whitespace is not stripped, so the user must type exactly one of the valid words.
+    The returned value is converted to lowercase.
+
+    Returns
+    -------
+    str
+        The player's choice: one of "rock", "paper", or "scissors".
+
+    Raises
+    ------
+    ValueError
+        If the user input does not match one of the valid options.
+    """
+    
     # Prompt the player to enter their choice and ensure it's valid.
     # Returns a dict with keys 'player' and 'computer' containing the final choices.
     player_Choice = input('Enter a choice Rock, Paper, Scissors:  ').lower()  # get player input and normalize to lowercase
